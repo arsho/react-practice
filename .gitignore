@@ -1,0 +1,26 @@
+# Compiled python modules.
+*.pyc
+
+# Setuptools distribution folder.
+/dist/
+
+# Python egg metadata, regenerated from source files by setuptools.
+/*.egg-info
+/*.egg
+
+# Ide preference
+/.idea
+/webapp/.idea/
+/webapp/.idea/*
+
+# PyCache
+/__pycache__
+
+# Venv
+/venv/
+/venv/*
+
+# node_modules
+/node_modules/
+/node_modules/*
+
