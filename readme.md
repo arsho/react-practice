@@ -1,10 +1,10 @@
 React
 ========
 
-![Final List](screenshot/phase1.png)
+![Final List](screenshot/api_data.png)
 
 A web application using React JS
-   
+
 ## Software Used
 
 The following environment are used to develop the application:
@@ -70,4 +70,3 @@ npm install
 ```
 npm start
 ```
-

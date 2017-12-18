@@ -4,7 +4,6 @@ import { HashRouter } from 'react-router-dom';
 import './stylesheets/index.css';
 
 import { App } from './components/App'
-import { Error404 } from './components/Error404'
 
 ReactDOM.render(
   <HashRouter>

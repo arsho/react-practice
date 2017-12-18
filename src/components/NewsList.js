@@ -1,6 +1,5 @@
 import React from 'react';
 import { NewsRow } from './NewsRow';
-import PropTypes from 'prop-types';
 
 export const NewsList = ({news_list}) => (
  <div className="news-wrapper">
@@ -29,30 +28,24 @@ NewsList.propTypes = {
 
 NewsList.defaultProps = {
   news_list :
-    [
-      {
-        title:"News 1 Default",
-        body:"News 1 body",
-        date:new Date("12/10/2017"),
-        author: "David"
-      },
-      {
-        title:"News 2 Default",
-        body:"News 2 body",
-        date:new Date("12/13/2017"),
-        author: "arsho"
-      },
-      {
-        title:"News 3 Default",
-        body:"News 3 body",
-        date:new Date("12/5/2017"),
-        author: "arsho"
-      },
-      {
-        title:"News 4 Default",
-        body:"News 4 body",
-        date:new Date("12/4/2017"),
-        author: "Alice"
-      }
-    ]
+  [
+    {
+      id: 1,
+      news_title:"News 1 default",
+      news_body:"News 1 body",
+      news_date:new Date("12/10/2017"),
+      news_author: "David",
+      news_publisher: "Alice"
+    },
+    {
+      id: 2,
+      news_title:"News 2 default",
+      news_body:"News 2 body",
+      news_date:new Date("12/11/2017"),
+      news_author: "Kevin",
+      news_publisher: "Bob"
+    }
+  ]
 }
+
+// import PropTypes from 'prop-types';

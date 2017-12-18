@@ -11,7 +11,7 @@ export const PageTitle = ({page_title}) => (
 )
 
 export const NavigationBar = () => (
-  <ul>
+  <ul className="horizontal-menu">
     <li> <Link to = '/'>Home</Link> </li>
     <li> <Link to = '/about'>About Us</Link> </li>
   </ul>

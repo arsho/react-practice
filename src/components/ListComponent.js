@@ -13,18 +13,18 @@ export class NewsList extends React.Component{
     var news_list = this.props.news_list.map((news, index) => {
       return <div key={index} className="news">
         <h3 className = "news-title">
-          {news.title}
+          {news.news_title}
         </h3>
           <small>
-            <span className = {this.isActive(news.author)}>
-             <User /> {news.author}
+            <span className = {this.isActive(news.news_author)}>
+             <User /> {news.news_author}
             </span>
             <span className = "right">
-            <Calendar /> {news.date.toDateString()}
+            <Calendar /> {news.news_date?news.news_date.toDateString():""}
             </span>
           </small>
         <p>
-          {news.body}
+          {news.news_body}
         </p>
       </div>
     });
@@ -38,32 +38,24 @@ export class NewsList extends React.Component{
 
 NewsList.defaultProps = {
   news_list :
-    [
-      {
-        title:"News 1 Default",
-        body:"News 1 body",
-        date:new Date("12/10/2017"),
-        author: "David"
-      },
-      {
-        title:"News 2 Default",
-        body:"News 2 body",
-        date:new Date("12/13/2017"),
-        author: "arsho"
-      },
-      {
-        title:"News 3 Default",
-        body:"News 3 body",
-        date:new Date("12/5/2017"),
-        author: "arsho"
-      },
-      {
-        title:"News 4 Default",
-        body:"News 4 body",
-        date:new Date("12/4/2017"),
-        author: "Alice"
-      }
-    ]
+  [
+    {
+      id: 1,
+      news_title:"News 1 default",
+      news_body:"News 1 body",
+      news_date:new Date("12/10/2017"),
+      news_author: "David",
+      news_publisher: "Alice"
+    },
+    {
+      id: 2,
+      news_title:"News 2 default",
+      news_body:"News 2 body",
+      news_date:new Date("12/11/2017"),
+      news_author: "Kevin",
+      news_publisher: "Bob"
+    }
+  ]
 }
 
 export class NewsCategory extends React.Component{

@@ -48,3 +48,23 @@ body{
   color: #dddddd;
   padding: 5px;
 }
+.horizontal-menu{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  overflow: hidden;
+}
+.horizontal-menu>li{
+  float: left;
+}
+.horizontal-menu>li>a{
+  padding: 14px 16px;
+  background: #777;
+  color: white;
+  text-decoration: none;
+}
+.horizontal-menu>li>a:hover{
+  background: #5b74a8;
+  transition: 1s ease;
+}
