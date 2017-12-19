@@ -3,6 +3,13 @@ body{
   padding: 20px;
   font-family: 'ubuntu' !important;
 }
+a{
+  text-decoration: none;
+  color: #5b74a8;
+}
+a:hover{
+  color: teal;
+}
 .app{
   width: 85%;
   margin: 0 auto;
@@ -31,12 +38,16 @@ body{
   border-bottom: 2px dashed #777;
 }
 .news-title{
-  color: #5b74a8;
   margin: 10px 0px;
 }
 .right{
   float: right;
   clear: both;
+}
+.active-link{
+  background: #5b74a8 !important;
+  color: white !important;
+  font-weight: bold !important;
 }
 .active{
   background: #5b74a8;
@@ -50,7 +61,7 @@ body{
 }
 .horizontal-menu{
   list-style-type: none;
-  padding: 0;
+  padding: 10px 0px;
   margin: 0;
   display: block;
   overflow: hidden;
